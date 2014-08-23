@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleOne</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="click_me">CLICK ME</string>
+    <string-array name="spinnet_entries">
+        <item >赤</item>
+        <item >红</item>
+    </string-array>
+</resources>

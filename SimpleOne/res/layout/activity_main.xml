@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_indeterminate_horizontal_holo"
+    android:layoutAnimation="@anim/layout_animation_row_left_slide"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/but_bg"
+        android:text="@string/click_me" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:background="@drawable/but_bg"
+        android:onClick="sendBroadcast"
+        android:text="发送广播" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:background="@drawable/but_bg"
+        android:onClick="sendOrderedBroadcast"
+        android:text="发送有序广播" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:background="@drawable/but_bg"
+        android:onClick="sendStickyBroadcast"
+        android:text="发送粘性广播" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:background="@drawable/but_bg"
+        android:onClick="registerStickyBroadcastReceiver"
+        android:text="注册粘性广播接收者" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:background="@drawable/but_bg"
+        android:onClick="startService"
+        android:text="启动服务（Service）" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5"
+        android:background="@drawable/but_bg"
+        android:onClick="stopService"
+        android:text="停止服务（Service）" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:background="@drawable/but_bg"
+        android:onClick="bindService"
+        android:text="绑定服务（Service）" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        android:background="@drawable/but_bg"
+        android:onClick="unBindService"
+        android:text="解绑服务（Service）" />
+
+    
+     <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button8"
+        android:background="@drawable/but_bg"
+        android:onClick="checkUriMatcher"
+        android:text="检查UriMatcher" />
+     
+     
+       <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:background="@drawable/but_bg"
+        android:onClick="insertBatchDatas"
+        android:text="插入数据（批量）" />
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@drawable/ic_launcher"
+        android:text="@string/hello_world"
+        android:textColor="@color/primary_text_light" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/spinnet_entries"
+        android:spinnerMode="dialog" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_large_white" />
+
+    <ImageView
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/progress_indeterminate_horizontal_holo" />
+
+</RelativeLayout>
